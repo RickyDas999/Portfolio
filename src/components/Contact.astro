@@ -1,0 +1,32 @@
+---
+const email = 'das.ricky999@gmail.com';
+
+const links = [
+	{ label: 'GitHub', href: 'https://github.com/RickyDas999' },
+	{ label: 'LinkedIn', href: '#' },
+];
+---
+
+<section id="contact" class="scroll-mt-20 border-t border-slate-800 py-20">
+	<h2 class="text-2xl font-semibold tracking-tight">Contact</h2>
+	<p class="mt-4 max-w-xl text-slate-400">
+		Have a question or want to work together? Reach out directly.
+	</p>
+
+	<a
+		href={`mailto:${email}`}
+		class="mt-6 inline-block text-2xl font-semibold text-sky-400 transition-colors hover:text-sky-300 sm:text-3xl"
+	>
+		{email}
+	</a>
+
+	<ul class="mt-8 flex gap-6 text-sm font-medium">
+		{links.map((link) => (
+			<li>
+				<a href={link.href} class="text-sky-400 transition-colors hover:text-sky-300">
+					{link.label}
+				</a>
+			</li>
+		))}
+	</ul>
+</section>
