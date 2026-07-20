@@ -1,12 +1,25 @@
 ---
 const bio = [
-	'YOUR_BIO_PARAGRAPH_1 — background, what you studied or how you got into this, in a sentence or two.',
-	'YOUR_BIO_PARAGRAPH_2 — what you\'re focused on now and what kind of work excites you.',
+	"I am a Computer Sciences graduate from the University of Wisconsin–Madison (minors in Business and Entrepreneurship) who graduated May 2026. Previously, I interned as a Software Development Engineer at Amazon Web Services, building a workflow visibility system used across Amazon organizations, and as a Software Asset Management Specialist at Johnson & Johnson.",
+	"I care about turning ambiguous problems into scalable, well-tested systems — spanning full-stack development, cloud backends, and data-driven tooling. Outside of engineering, I founded Food For All, a non-profit coordinating food donations in Somerset County, NJ.",
 ];
 
-const skills = ['SKILL_1', 'SKILL_2', 'SKILL_3', 'SKILL_4', 'SKILL_5', 'SKILL_6'];
+const skills = [
+	'Java',
+	'Python',
+	'JavaScript',
+	'C',
+	'Kotlin',
+	'SQL',
+	'React.js',
+	'React Native',
+	'AWS (Lambda, DynamoDB, SageMaker, CloudWatch)',
+	'Flask',
+	'Power BI',
+	'Tableau',
+];
 
-const resumeUrl = '#'; // RESUME_URL — link to a hosted PDF or /resume.pdf in public/
+const resumeUrl = `${import.meta.env.BASE_URL}/resume.pdf`.replace(/\/{2,}/g, '/');
 ---
 
 <section id="about" class="scroll-mt-20 border-t border-slate-800 py-20">
@@ -18,6 +31,8 @@ const resumeUrl = '#'; // RESUME_URL — link to a hosted PDF or /resume.pdf in 
 			))}
 			<a
 				href={resumeUrl}
+				target="_blank"
+				rel="noopener"
 				class="mt-6 inline-block rounded-md border border-slate-700 px-5 py-2.5 text-sm font-semibold text-slate-100 transition-colors hover:border-slate-500"
 			>
 				Download Resume
