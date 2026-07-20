@@ -1,0 +1,35 @@
+---
+const bio = [
+	'YOUR_BIO_PARAGRAPH_1 — background, what you studied or how you got into this, in a sentence or two.',
+	'YOUR_BIO_PARAGRAPH_2 — what you\'re focused on now and what kind of work excites you.',
+];
+
+const skills = ['SKILL_1', 'SKILL_2', 'SKILL_3', 'SKILL_4', 'SKILL_5', 'SKILL_6'];
+
+const resumeUrl = '#'; // RESUME_URL — link to a hosted PDF or /resume.pdf in public/
+---
+
+<section id="about" class="scroll-mt-20 border-t border-slate-800 py-20">
+	<h2 class="text-2xl font-semibold tracking-tight">About</h2>
+	<div class="mt-8 grid gap-10 sm:grid-cols-3">
+		<div class="sm:col-span-2">
+			{bio.map((paragraph) => (
+				<p class="mt-4 text-slate-400 first:mt-0">{paragraph}</p>
+			))}
+			<a
+				href={resumeUrl}
+				class="mt-6 inline-block rounded-md border border-slate-700 px-5 py-2.5 text-sm font-semibold text-slate-100 transition-colors hover:border-slate-500"
+			>
+				Download Resume
+			</a>
+		</div>
+		<div>
+			<h3 class="text-sm font-medium uppercase tracking-widest text-slate-400">Skills</h3>
+			<ul class="mt-4 flex flex-wrap gap-2">
+				{skills.map((skill) => (
+					<li class="rounded-full bg-slate-800 px-2.5 py-1 text-xs text-slate-300">{skill}</li>
+				))}
+			</ul>
+		</div>
+	</div>
+</section>
