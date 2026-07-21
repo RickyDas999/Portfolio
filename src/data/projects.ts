@@ -26,7 +26,7 @@ export const projects: Project[] = [
 	{
 		title: 'LeetCoach',
 		description:
-			'Full-stack app for learning LeetCode patterns through reflection instead of grinding — logs attempts, classifies mistakes, and schedules reviews with spaced repetition so patterns actually stick. Runs entirely within the AWS free tier with no always-on servers.',
+			'Full-stack app for learning LeetCode patterns through reflection instead of grinding. Logs attempts, classifies mistakes, and schedules reviews with spaced repetition so patterns actually stick. Runs entirely on an AWS backend.',
 		tags: ['Next.js', 'TypeScript', 'AWS Lambda', 'DynamoDB', 'Tailwind CSS'],
 		repoUrl: 'https://github.com/RickyDas999/LeetCoach',
 		liveUrl: '',
