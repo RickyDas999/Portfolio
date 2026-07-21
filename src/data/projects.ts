@@ -23,4 +23,36 @@ export const projects: Project[] = [
 		repoUrl: 'https://github.com/RickyDas999/SoundScape',
 		liveUrl: '',
 	},
+	{
+		title: 'LeetCoach',
+		description:
+			'Full-stack app for learning LeetCode patterns through reflection instead of grinding — logs attempts, classifies mistakes, and schedules reviews with spaced repetition so patterns actually stick. Runs entirely within the AWS free tier with no always-on servers.',
+		tags: ['Next.js', 'TypeScript', 'AWS Lambda', 'DynamoDB', 'Tailwind CSS'],
+		repoUrl: 'https://github.com/RickyDas999/LeetCoach',
+		liveUrl: '',
+	},
+	{
+		title: 'EuroTrip Planner',
+		description:
+			'Travel itinerary planner built around an interactive Google Maps view of Europe. Users click cities to browse photos and activities, build a real-time itinerary in a side panel, and save completed trips with notes and reviews under a Past Destinations archive.',
+		tags: ['React', 'JavaScript', 'Google Maps API'],
+		repoUrl: 'https://github.com/RickyDas999/EuroTrip-Planner',
+		liveUrl: '',
+	},
+	{
+		title: 'MadGrades Enrollment Assistant',
+		description:
+			'Automation tool for UW-Madison course search and enrollment. Pulls grade distributions from MadGrades.com for every course in a user\'s enrollment cart, surfacing historical grade data to make course selection easier.',
+		tags: ['Python', 'Automation'],
+		repoUrl: 'https://github.com/RickyDas999/MadGrades-App',
+		liveUrl: '',
+	},
+	{
+		title: 'Brick Breaker',
+		description:
+			'Classic Brick Breaker game built entirely in Three.js, with animated gameplay and randomized brick generation for a different layout every playthrough.',
+		tags: ['JavaScript', 'Three.js'],
+		repoUrl: 'https://github.com/RickyDas999/Brick-Breaker-Game',
+		liveUrl: '',
+	},
 ];
