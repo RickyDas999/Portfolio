@@ -8,6 +8,14 @@ export interface Project {
 
 export const projects: Project[] = [
 	{
+		title: 'SWETrack',
+		description:
+			'Personalized ML platform helping new-grad software engineers cut through inconsistent job titles and long descriptions to find roles that actually fit. Its Opportunity Intelligence engine ranks postings against a candidate\'s skills and preferences using TF-IDF and sentence-transformer embeddings.',
+		tags: ['Python', 'FastAPI', 'scikit-learn', 'Hugging Face', 'MLflow'],
+		repoUrl: 'https://github.com/RickyDas999/swetrack',
+		liveUrl: '',
+	},
+	{
 		title: 'Capital One — Fraud Detection (Capstone)',
 		description:
 			'End-to-end full-stack fraud detection service with 99.3%+ accuracy. Trained a Random Forest model on 1M+ simulated credit card transactions, and built a Flask API on AWS for real-time fraud scoring with Twilio SMS alerts on flagged transactions.',
