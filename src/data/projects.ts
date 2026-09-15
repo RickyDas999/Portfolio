@@ -8,19 +8,11 @@ export interface Project {
 
 export const projects: Project[] = [
 	{
-		title: 'Capital One — Fraud Detection (Capstone)',
+		title: 'DecisionForge',
 		description:
-			'End-to-end full-stack fraud detection service with 99.3%+ accuracy. Trained a Random Forest model on 1M+ simulated credit card transactions, and built a Flask API on AWS for real-time fraud scoring with Twilio SMS alerts on flagged transactions.',
-		tags: ['Python', 'Flask', 'AWS', 'DynamoDB', 'Lambda', 'Twilio'],
-		repoUrl: 'https://github.com/RickyDas999/CapitalOneCapstone',
-		liveUrl: '',
-	},
-	{
-		title: 'Soundscape',
-		description:
-			'Multi-screen Android app that logs and visualizes real-time campus noise levels from 5,000+ geo-tagged sound events per week. Built a Google Maps heatmap with spatial binning and EWMA smoothing to surface quiet and high-traffic areas with sub-250ms query latency.',
-		tags: ['Kotlin', 'Jetpack Compose', 'Firebase', 'Google Maps'],
-		repoUrl: 'https://github.com/RickyDas999/SoundScape',
+			'Cost-controlled multi-agent system that routes decision-oriented questions to specialized AI agents. An orchestrator classifies each query into research, comparison, or briefing, then dispatches a single specialist agent for a structured answer — capped at exactly 2 LLM calls per request with transparent cost tracking.',
+		tags: ['Python', 'FastAPI', 'Pydantic', 'Anthropic API', 'SQLite'],
+		repoUrl: 'https://github.com/RickyDas999/DecisionForge',
 		liveUrl: '',
 	},
 	{
@@ -32,11 +24,27 @@ export const projects: Project[] = [
 		liveUrl: '',
 	},
 	{
-		title: 'EuroTrip Planner',
+		title: 'Support Ticket Triage',
 		description:
-			'Travel itinerary planner built around an interactive Google Maps view of Europe. Users click cities to browse photos and activities, build a real-time itinerary in a side panel, and save completed trips with notes and reviews under a Past Destinations archive.',
-		tags: ['React', 'JavaScript', 'Google Maps API'],
-		repoUrl: 'https://github.com/RickyDas999/EuroTrip-Planner',
+			"Educational Streamlit app demonstrating Claude's structured output and self-correction. Compares naive JSON parsing against Claude's tool-use feature across three validation layers — shape, allowed-value, and content-sense — with automatic retries that feed validation errors back into the next API call.",
+		tags: ['Python', 'Streamlit', 'Anthropic API', 'SQLite'],
+		repoUrl: 'https://github.com/RickyDas999/ticket-triage',
+		liveUrl: '',
+	},
+	{
+		title: 'Encore',
+		description:
+			'Full-stack event discovery app that surfaces AI-recommended concerts, sports, and comedy shows nearby. Users bookmark favorite artists and teams, build simple itineraries, and browse past and upcoming events in one place.',
+		tags: ['React', 'TypeScript', 'Vite', 'Node.js', 'Express'],
+		repoUrl: 'https://github.com/RickyDas999/Encore',
+		liveUrl: '',
+	},
+	{
+		title: 'Portfolio Tracker',
+		description:
+			'Application for tracking a personal investment portfolio — adding assets, pulling live prices, and recomputing portfolio value — with a Python backend and infrastructure-as-code deployment.',
+		tags: ['Python', 'Backend', 'Infra as Code'],
+		repoUrl: 'https://github.com/RickyDas999/Portfolio-Tracker',
 		liveUrl: '',
 	},
 	{
@@ -45,6 +53,14 @@ export const projects: Project[] = [
 			'Automation tool for UW-Madison course search and enrollment. Pulls grade distributions from MadGrades.com for every course in a user\'s enrollment cart, surfacing historical grade data to make course selection easier.',
 		tags: ['Python', 'Automation'],
 		repoUrl: 'https://github.com/RickyDas999/MadGrades-App',
+		liveUrl: '',
+	},
+	{
+		title: 'LiftMax',
+		description:
+			'iOS workout-tracking app built with Swift, organized around a modular Features architecture for logging lifts and progress over time.',
+		tags: ['Swift', 'iOS', 'Xcode'],
+		repoUrl: 'https://github.com/RickyDas999/LiftMax',
 		liveUrl: '',
 	},
 	{
