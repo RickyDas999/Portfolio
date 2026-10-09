@@ -34,6 +34,14 @@ export const projects: Project[] = [
 		liveUrl: '',
 	},
 	{
+		title: 'FridgeFit',
+		description:
+			"Personal meal-planning backend that answers what to cook from what's already in the fridge — ranking recipes by ingredient availability, expiry urgency, nutrition-goal macro fit, and past enjoyment. Built as a domain-driven Python service: SQLAlchemy models persist inventory, recipes, and meal history to SQLite, while the ranking and FEFO (first-expire-first-out) consumption logic stays in pure, independently pytest-tested domain modules decoupled from persistence. A Ruff + pytest CI matrix across Python 3.11/3.12 gates every pull request, with an opt-in Claude-powered reviewer wired into GitHub Actions. Actively in development — currently a tested domain library, with the API and app layer next.",
+		tags: ['Python', 'SQLAlchemy', 'pytest', 'Ruff', 'GitHub Actions', 'Anthropic API'],
+		repoUrl: 'https://github.com/RickyDas999/FridgeFit',
+		liveUrl: '',
+	},
+	{
 		title: 'Soundscape',
 		description:
 			'Multi-screen Android app, built in Kotlin with Jetpack Compose and backed by Firebase, that logs and visualizes real-time campus noise levels from 5,000+ geo-tagged sound events per week. Renders a Google Maps heatmap with spatial binning and EWMA smoothing to surface quiet and high-traffic areas with sub-250ms query latency.',
