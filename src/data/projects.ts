@@ -26,19 +26,19 @@ export const projects: Project[] = [
 		liveUrl: '',
 	},
 	{
-		title: 'DecisionForge',
-		description:
-			'Cost-controlled multi-agent system that routes decision-oriented questions to specialized AI agents, built with FastAPI and Pydantic-validated schemas on top of the Anthropic API. An orchestrator classifies each query into research, comparison, or briefing, then dispatches a single specialist agent for a structured answer — capped at exactly 2 LLM calls per request, with SQLite persisting transparent per-request cost tracking.',
-		tags: ['Python', 'FastAPI', 'Pydantic', 'Anthropic API', 'SQLite'],
-		repoUrl: 'https://github.com/RickyDas999/DecisionForge',
-		liveUrl: '',
-	},
-	{
 		title: 'FridgeFit',
 		description:
 			"Personal meal-planning backend that answers what to cook from what's already in the fridge — ranking recipes by ingredient availability, expiry urgency, nutrition-goal macro fit, and past enjoyment. Built as a domain-driven Python service: SQLAlchemy models persist inventory, recipes, and meal history to SQLite, while the ranking and FEFO (first-expire-first-out) consumption logic stays in pure, independently pytest-tested domain modules decoupled from persistence. A Ruff + pytest CI matrix across Python 3.11/3.12 gates every pull request, with an opt-in Claude-powered reviewer wired into GitHub Actions. Actively in development — currently a tested domain library, with the API and app layer next.",
 		tags: ['Python', 'SQLAlchemy', 'pytest', 'Ruff', 'GitHub Actions', 'Anthropic API'],
 		repoUrl: 'https://github.com/RickyDas999/FridgeFit',
+		liveUrl: '',
+	},
+	{
+		title: 'DecisionForge',
+		description:
+			'Cost-controlled multi-agent system that routes decision-oriented questions to specialized AI agents, built with FastAPI and Pydantic-validated schemas on top of the Anthropic API. An orchestrator classifies each query into research, comparison, or briefing, then dispatches a single specialist agent for a structured answer — capped at exactly 2 LLM calls per request, with SQLite persisting transparent per-request cost tracking.',
+		tags: ['Python', 'FastAPI', 'Pydantic', 'Anthropic API', 'SQLite'],
+		repoUrl: 'https://github.com/RickyDas999/DecisionForge',
 		liveUrl: '',
 	},
 	{
